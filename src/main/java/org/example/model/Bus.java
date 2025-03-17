@@ -17,7 +17,7 @@ public class Bus {
 
     public void countAvailableSeat(){
         long seatCount=seats.stream().filter(seat -> seat.getSeatStatus().equals(SeatStatus.EMPTY)).count();
-        System.out.println("Avaliable Seat: "+seatCount);
+        System.out.println("Available Seat: "+seatCount);
     }
 
     public void bookSeat(Passenger passenger){
